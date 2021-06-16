@@ -1,0 +1,11 @@
+{
+  "name": "ts-throttle-debounce",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/songzhw/ts-throttle-debounce.git",
+  "author": "songzhw <songzhw2012@gmail.com>",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
+}

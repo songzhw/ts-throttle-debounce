@@ -6,7 +6,8 @@ const refresh = (prog: number) => {
 };
 
 const condition = (prev: any, now: any) => (now[0] - prev[0] > 0.3);
-const throttledCallback = throttleCondition(refresh, [0], condition);
+const reset = (arg: number[]) => arg[0] === 1;
+const throttledCallback = throttleCondition(refresh, [0], condition, reset);
 
 const source = new LoadManager();
 source.setCallback(throttledCallback);
